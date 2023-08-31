@@ -1,4 +1,35 @@
 html, body {
     margin: 0;
     padding: 0;
+    max-width: 390px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #1B1924;
+    color: #ffffff;
+    font-family: sans-serif;
+    align-items: center;
+    gap: 10px;
+}
+
+img {
+    width: 90px;
+}
+
+input {
+    height: 117px;
+    width: 317px;
+    background-color: #444059;
+    border: none;
+    border-radius: 8px;
+    color: #8F8F8F;
+}
+
+button {
+    height: 61px;
+    width: 317px;
+    background-color: #28A9F1;
+    border: none;
+    border-radius: 8px;
+    
 }
