@@ -55,7 +55,11 @@ h2 {
 }
 
 p {
-    background-color: #1B1924;
+    background-color: whitesmoke;
     color: #1B1924;
     font-family: 'Inter', sans-serif;
+}
+
+#endorsement-list {
+    width: 317px;
 }

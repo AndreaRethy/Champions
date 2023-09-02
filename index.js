@@ -23,9 +23,22 @@ const endorsementList = document.getElementById("endorsement-list")
 
 publishButtonEl.addEventListener("click", function() {
 
-    console.log("button clicked")
-
-    let inputValue = textareaEl.val();
-
+    const inputValue = textareaEl.value
+    
+    addEndorsement(inputValue)
+    
     push(endorsmentsInDB, inputValue)
+
+    clearInput()
+    
 })
+
+function clearInput(input) {
+    textareaEl.value = ""
+}
+
+function addEndorsement(input) {
+
+    endorsementList.innerHTML += `<p>${input}</p>`
+
+}
