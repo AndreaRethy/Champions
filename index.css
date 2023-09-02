@@ -25,7 +25,7 @@ h1 {
     font-weight: bold;
 }
 
-input {
+textarea {
     height: 97px;
     width: 297px;
     background-color: #444059;
@@ -36,12 +36,6 @@ input {
     font-size: 15px;
     font-weight: normal;
     padding: 10px;
-}
-
-input::placeholder {
-    position: absolute;
-    left: 12px;
-    top: 10%;  
 }
 
 button {

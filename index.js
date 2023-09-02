@@ -16,3 +16,16 @@ const appSettings = {
 const app = initializeApp(appSettings)
 const database = getDatabase(app)
 const endorsmentsInDB = ref(database, "endorsements")
+
+const textareaEl = document.getElementById("textarea")
+const publishButtonEl = document.getElementById("publish-btn")
+const endorsementList = document.getElementById("endorsement-list")
+
+publishButtonEl.addEventListener("click", function() {
+
+    console.log("button clicked")
+
+    let inputValue = textareaEl.val();
+
+    push(endorsmentsInDB, inputValue)
+})
